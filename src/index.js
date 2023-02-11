@@ -1,7 +1,6 @@
 let string= "";
 let node=document.querySelectorAll('button');
-// console.log("I AM HERE");
-// console.log(node);
+
 
 Array.from(node).forEach((button)=>{
     button.addEventListener('click',(e)=>{
@@ -37,9 +36,7 @@ Array.from(node).forEach((button)=>{
 
             if(e.target.innerHTML=="BS")
             {
-            // console.log(string);
             string=string.slice(0, - 3);
-            // console.log(string);
             document.querySelector('input').value=string;
             }
 
